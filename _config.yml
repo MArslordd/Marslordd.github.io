@@ -1,25 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Yibo Luo(罗义博)
+title: "Yibo Luo"
 email: luoyibo1@sjtu.edu.cn
 description: "Second-year undergraduate student at CSE, Shanghai Jiao Tong University."
 url: "https://marslordd.github.io"
 baseurl: ""
 repository: "Marslordd/Marslordd.github.io"
-twitter_username: username
 github_username: Marslordd
 minimal_mistakes_skin: default
 search: true
@@ -28,28 +13,16 @@ timezone: Asia/Shanghai
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -59,16 +32,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Yibo Luo"
-  avatar : "/assets/images/profile.jpg"
-  bio    : "Second-year undergraduate student at CSE, SJTU."
+  name: "Yibo Luo"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Shanghai Jiao Tong University"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://marslordd.github.io"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:luoyibo1@sjtu.edu.cn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Marslordd"
@@ -80,7 +47,6 @@ footer:
       url: "https://github.com/Marslordd"
 
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -91,7 +57,6 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
   - scope:
       path: "_pages"
       type: pages
